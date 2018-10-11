@@ -5,23 +5,29 @@
 
 int main(int argc, char *argv[]) {
 	
-	 int num=0;
-	 char str[100];
-	 char c;
-	 //string
+	 int answer=38;
+	 int c;
 	 
-	 printf("input a string  : ");
-	 
-	 while ( (c = getchar() ) !='\n')
+
+	 do 
 	 {
-	 	if('0' <= c && '9' >=c)
-	 	{
-	 		num++;
-		 }
-	  
-	 }
-	 printf("The number of digits are %d", num);
 	 
+	 printf("Guess a number ");
+	 scanf ("%d",&c);
+	 
+	 	if(c>answer)
+	 	{
+	 	printf("low!");
+		 }
+	 	
+	 	if(c<answer)
+	 	{
+		 printf("high!");
+		 }
+	 	
+	 }	 while (c!=answer);
+	 
+	 printf("Congratuation!");
 	 
        
      
